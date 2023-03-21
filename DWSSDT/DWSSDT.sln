@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DWSSDT", "DWSSDT.sqlproj", "{8930AC12-3D8A-485E-810C-7365AECCD7A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQlFileGenerator", "..\SQlFileGenerator\SQlFileGenerator.csproj", "{765B7AC0-1728-4624-8F0E-787ABFC480DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8930AC12-3D8A-485E-810C-7365AECCD7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8930AC12-3D8A-485E-810C-7365AECCD7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8930AC12-3D8A-485E-810C-7365AECCD7A6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8930AC12-3D8A-485E-810C-7365AECCD7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8930AC12-3D8A-485E-810C-7365AECCD7A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8930AC12-3D8A-485E-810C-7365AECCD7A6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{765B7AC0-1728-4624-8F0E-787ABFC480DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{765B7AC0-1728-4624-8F0E-787ABFC480DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{765B7AC0-1728-4624-8F0E-787ABFC480DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{765B7AC0-1728-4624-8F0E-787ABFC480DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BD6267F-2EF2-4EAC-9C4D-4AF5A83FCA97}
+	EndGlobalSection
+EndGlobal

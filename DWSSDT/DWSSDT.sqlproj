@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>DWSSDT</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{8930ac12-3d8a-485e-810c-7365aeccd7a6}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlDwDatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>DWSSDT</RootNamespace>
+    <AssemblyName>DWSSDT</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <ValidateCasingOnIdentifiers>False</ValidateCasingOnIdentifiers>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Security" />
+    <Folder Include="Security\Schemas" />
+    <Folder Include="sch_0\" />
+    <Folder Include="sch_0\Tables\" />
+    <Folder Include="sch_0\Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Security\Schemas\sch_0.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="sch_0\Tables\tbl_0.sql" />
+	<Build Include="sch_0\Tables\tbl_1.sql" />
+	<Build Include="sch_0\Tables\tbl_2.sql" />
+	<Build Include="sch_0\Tables\tbl_3.sql" />
+	<Build Include="sch_0\Tables\tbl_4.sql" />
+	<Build Include="sch_0\Tables\tbl_5.sql" />
+	<Build Include="sch_0\Tables\tbl_6.sql" />
+	<Build Include="sch_0\Tables\tbl_7.sql" />
+	<Build Include="sch_0\Tables\tbl_8.sql" />
+	<Build Include="sch_0\Tables\tbl_9.sql" />
+    <!-- <Build Include="sch_1\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_2\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_3\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_4\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_5\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_6\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_7\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_8\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_9\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_10\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_11\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_12\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_13\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_14\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_15\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_16\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_17\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_18\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_19\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_20\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_21\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_22\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_23\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_24\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_25\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_26\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_27\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_28\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_29\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_30\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_31\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_32\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_33\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_34\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_35\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_36\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_37\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_38\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_39\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_40\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_41\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_42\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_43\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_44\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_45\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_46\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_47\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_48\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_49\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_50\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_51\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_52\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_53\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_54\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_55\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_56\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_57\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_58\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_59\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_60\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_61\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_62\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_63\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_64\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_65\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_66\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_67\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_68\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_69\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_70\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_71\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_72\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_73\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_74\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_75\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_76\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_77\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_78\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_79\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_80\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_81\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_82\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_83\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_84\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_85\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_86\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_87\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_88\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_89\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_90\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_91\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_92\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_93\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_94\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_95\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_96\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_97\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_98\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_99\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_100\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_101\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_102\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_103\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_104\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_105\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_106\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_107\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_108\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_109\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_110\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_111\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_112\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_113\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_114\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_115\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_116\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_117\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_118\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_119\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_120\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_121\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_122\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_123\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_124\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_125\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_126\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_127\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_128\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_129\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_130\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_131\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_132\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_133\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_134\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_135\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_136\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_137\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_138\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_139\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_140\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_141\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_142\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_143\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_144\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_145\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_146\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_147\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_148\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_149\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_150\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_151\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_152\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_153\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_154\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_155\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_156\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_157\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_158\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_159\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_160\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_161\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_162\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_163\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_164\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_165\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_166\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_167\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_168\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_169\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_170\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_171\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_172\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_173\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_174\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_175\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_176\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_177\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_178\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_179\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_180\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_181\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_182\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_183\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_184\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_185\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_186\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_187\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_188\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_189\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_190\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_191\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_192\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_193\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_194\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_195\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_196\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_197\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_198\Tables\*.sql" /> -->
+    <!-- <Build Include="sch_199\Tables\*.sql" /> -->
+  </ItemGroup>
+  <ItemGroup>
+	<Build Include="sch_0\Views\vw_0.sql" />
+	<Build Include="sch_0\Views\vw_1.sql" />
+	<Build Include="sch_0\Views\vw_2.sql" />
+	<Build Include="sch_0\Views\vw_3.sql" />
+	<Build Include="sch_0\Views\vw_4.sql" />
+	<Build Include="sch_0\Views\vw_5.sql" />
+	<Build Include="sch_0\Views\vw_6.sql" />
+	<Build Include="sch_0\Views\vw_7.sql" />
+	<Build Include="sch_0\Views\vw_8.sql" />
+	<Build Include="sch_0\Views\vw_9.sql" />
+    <!-- <Build Include="sch_0\Views\*.sql" /> -->
+    <!-- <Build Include="sch_1\Views\*.sql" /> -->
+    <!-- <Build Include="sch_2\Views\*.sql" /> -->
+    <!-- <Build Include="sch_3\Views\*.sql" /> -->
+    <!-- <Build Include="sch_4\Views\*.sql" /> -->
+    <!-- <Build Include="sch_5\Views\*.sql" /> -->
+    <!-- <Build Include="sch_6\Views\*.sql" /> -->
+    <!-- <Build Include="sch_7\Views\*.sql" /> -->
+    <!-- <Build Include="sch_8\Views\*.sql" /> -->
+    <!-- <Build Include="sch_9\Views\*.sql" /> -->
+    <!-- <Build Include="sch_10\Views\*.sql" /> -->
+    <!-- <Build Include="sch_11\Views\*.sql" /> -->
+    <!-- <Build Include="sch_12\Views\*.sql" /> -->
+    <!-- <Build Include="sch_13\Views\*.sql" /> -->
+    <!-- <Build Include="sch_14\Views\*.sql" /> -->
+    <!-- <Build Include="sch_15\Views\*.sql" /> -->
+    <!-- <Build Include="sch_16\Views\*.sql" /> -->
+    <!-- <Build Include="sch_17\Views\*.sql" /> -->
+    <!-- <Build Include="sch_18\Views\*.sql" /> -->
+    <!-- <Build Include="sch_19\Views\*.sql" /> -->
+    <!-- <Build Include="sch_20\Views\*.sql" /> -->
+    <!-- <Build Include="sch_21\Views\*.sql" /> -->
+    <!-- <Build Include="sch_22\Views\*.sql" /> -->
+    <!-- <Build Include="sch_23\Views\*.sql" /> -->
+    <!-- <Build Include="sch_24\Views\*.sql" /> -->
+    <!-- <Build Include="sch_25\Views\*.sql" /> -->
+    <!-- <Build Include="sch_26\Views\*.sql" /> -->
+    <!-- <Build Include="sch_27\Views\*.sql" /> -->
+    <!-- <Build Include="sch_28\Views\*.sql" /> -->
+    <!-- <Build Include="sch_29\Views\*.sql" /> -->
+    <!-- <Build Include="sch_30\Views\*.sql" /> -->
+    <!-- <Build Include="sch_31\Views\*.sql" /> -->
+    <!-- <Build Include="sch_32\Views\*.sql" /> -->
+    <!-- <Build Include="sch_33\Views\*.sql" /> -->
+    <!-- <Build Include="sch_34\Views\*.sql" /> -->
+    <!-- <Build Include="sch_35\Views\*.sql" /> -->
+    <!-- <Build Include="sch_36\Views\*.sql" /> -->
+    <!-- <Build Include="sch_37\Views\*.sql" /> -->
+    <!-- <Build Include="sch_38\Views\*.sql" /> -->
+    <!-- <Build Include="sch_39\Views\*.sql" /> -->
+    <!-- <Build Include="sch_40\Views\*.sql" /> -->
+    <!-- <Build Include="sch_41\Views\*.sql" /> -->
+    <!-- <Build Include="sch_42\Views\*.sql" /> -->
+    <!-- <Build Include="sch_43\Views\*.sql" /> -->
+    <!-- <Build Include="sch_44\Views\*.sql" /> -->
+    <!-- <Build Include="sch_45\Views\*.sql" /> -->
+    <!-- <Build Include="sch_46\Views\*.sql" /> -->
+    <!-- <Build Include="sch_47\Views\*.sql" /> -->
+    <!-- <Build Include="sch_48\Views\*.sql" /> -->
+    <!-- <Build Include="sch_49\Views\*.sql" /> -->
+    <!-- <Build Include="sch_50\Views\*.sql" /> -->
+    <!-- <Build Include="sch_51\Views\*.sql" /> -->
+    <!-- <Build Include="sch_52\Views\*.sql" /> -->
+    <!-- <Build Include="sch_53\Views\*.sql" /> -->
+    <!-- <Build Include="sch_54\Views\*.sql" /> -->
+    <!-- <Build Include="sch_55\Views\*.sql" /> -->
+    <!-- <Build Include="sch_56\Views\*.sql" /> -->
+    <!-- <Build Include="sch_57\Views\*.sql" /> -->
+    <!-- <Build Include="sch_58\Views\*.sql" /> -->
+    <!-- <Build Include="sch_59\Views\*.sql" /> -->
+    <!-- <Build Include="sch_60\Views\*.sql" /> -->
+    <!-- <Build Include="sch_61\Views\*.sql" /> -->
+    <!-- <Build Include="sch_62\Views\*.sql" /> -->
+    <!-- <Build Include="sch_63\Views\*.sql" /> -->
+    <!-- <Build Include="sch_64\Views\*.sql" /> -->
+    <!-- <Build Include="sch_65\Views\*.sql" /> -->
+    <!-- <Build Include="sch_66\Views\*.sql" /> -->
+    <!-- <Build Include="sch_67\Views\*.sql" /> -->
+    <!-- <Build Include="sch_68\Views\*.sql" /> -->
+    <!-- <Build Include="sch_69\Views\*.sql" /> -->
+    <!-- <Build Include="sch_70\Views\*.sql" /> -->
+    <!-- <Build Include="sch_71\Views\*.sql" /> -->
+    <!-- <Build Include="sch_72\Views\*.sql" /> -->
+    <!-- <Build Include="sch_73\Views\*.sql" /> -->
+    <!-- <Build Include="sch_74\Views\*.sql" /> -->
+    <!-- <Build Include="sch_75\Views\*.sql" /> -->
+    <!-- <Build Include="sch_76\Views\*.sql" /> -->
+    <!-- <Build Include="sch_77\Views\*.sql" /> -->
+    <!-- <Build Include="sch_78\Views\*.sql" /> -->
+    <!-- <Build Include="sch_79\Views\*.sql" /> -->
+    <!-- <Build Include="sch_80\Views\*.sql" /> -->
+    <!-- <Build Include="sch_81\Views\*.sql" /> -->
+    <!-- <Build Include="sch_82\Views\*.sql" /> -->
+    <!-- <Build Include="sch_83\Views\*.sql" /> -->
+    <!-- <Build Include="sch_84\Views\*.sql" /> -->
+    <!-- <Build Include="sch_85\Views\*.sql" /> -->
+    <!-- <Build Include="sch_86\Views\*.sql" /> -->
+    <!-- <Build Include="sch_87\Views\*.sql" /> -->
+    <!-- <Build Include="sch_88\Views\*.sql" /> -->
+    <!-- <Build Include="sch_89\Views\*.sql" /> -->
+    <!-- <Build Include="sch_90\Views\*.sql" /> -->
+    <!-- <Build Include="sch_91\Views\*.sql" /> -->
+    <!-- <Build Include="sch_92\Views\*.sql" /> -->
+    <!-- <Build Include="sch_93\Views\*.sql" /> -->
+    <!-- <Build Include="sch_94\Views\*.sql" /> -->
+    <!-- <Build Include="sch_95\Views\*.sql" /> -->
+    <!-- <Build Include="sch_96\Views\*.sql" /> -->
+    <!-- <Build Include="sch_97\Views\*.sql" /> -->
+    <!-- <Build Include="sch_98\Views\*.sql" /> -->
+    <!-- <Build Include="sch_99\Views\*.sql" /> -->
+    <!-- <Build Include="sch_100\Views\*.sql" /> -->
+    <!-- <Build Include="sch_101\Views\*.sql" /> -->
+    <!-- <Build Include="sch_102\Views\*.sql" /> -->
+    <!-- <Build Include="sch_103\Views\*.sql" /> -->
+    <!-- <Build Include="sch_104\Views\*.sql" /> -->
+    <!-- <Build Include="sch_105\Views\*.sql" /> -->
+    <!-- <Build Include="sch_106\Views\*.sql" /> -->
+    <!-- <Build Include="sch_107\Views\*.sql" /> -->
+    <!-- <Build Include="sch_108\Views\*.sql" /> -->
+    <!-- <Build Include="sch_109\Views\*.sql" /> -->
+    <!-- <Build Include="sch_110\Views\*.sql" /> -->
+    <!-- <Build Include="sch_111\Views\*.sql" /> -->
+    <!-- <Build Include="sch_112\Views\*.sql" /> -->
+    <!-- <Build Include="sch_113\Views\*.sql" /> -->
+    <!-- <Build Include="sch_114\Views\*.sql" /> -->
+    <!-- <Build Include="sch_115\Views\*.sql" /> -->
+    <!-- <Build Include="sch_116\Views\*.sql" /> -->
+    <!-- <Build Include="sch_117\Views\*.sql" /> -->
+    <!-- <Build Include="sch_118\Views\*.sql" /> -->
+    <!-- <Build Include="sch_119\Views\*.sql" /> -->
+    <!-- <Build Include="sch_120\Views\*.sql" /> -->
+    <!-- <Build Include="sch_121\Views\*.sql" /> -->
+    <!-- <Build Include="sch_122\Views\*.sql" /> -->
+    <!-- <Build Include="sch_123\Views\*.sql" /> -->
+    <!-- <Build Include="sch_124\Views\*.sql" /> -->
+    <!-- <Build Include="sch_125\Views\*.sql" /> -->
+    <!-- <Build Include="sch_126\Views\*.sql" /> -->
+    <!-- <Build Include="sch_127\Views\*.sql" /> -->
+    <!-- <Build Include="sch_128\Views\*.sql" /> -->
+    <!-- <Build Include="sch_129\Views\*.sql" /> -->
+    <!-- <Build Include="sch_130\Views\*.sql" /> -->
+    <!-- <Build Include="sch_131\Views\*.sql" /> -->
+    <!-- <Build Include="sch_132\Views\*.sql" /> -->
+    <!-- <Build Include="sch_133\Views\*.sql" /> -->
+    <!-- <Build Include="sch_134\Views\*.sql" /> -->
+    <!-- <Build Include="sch_135\Views\*.sql" /> -->
+    <!-- <Build Include="sch_136\Views\*.sql" /> -->
+    <!-- <Build Include="sch_137\Views\*.sql" /> -->
+    <!-- <Build Include="sch_138\Views\*.sql" /> -->
+    <!-- <Build Include="sch_139\Views\*.sql" /> -->
+    <!-- <Build Include="sch_140\Views\*.sql" /> -->
+    <!-- <Build Include="sch_141\Views\*.sql" /> -->
+    <!-- <Build Include="sch_142\Views\*.sql" /> -->
+    <!-- <Build Include="sch_143\Views\*.sql" /> -->
+    <!-- <Build Include="sch_144\Views\*.sql" /> -->
+    <!-- <Build Include="sch_145\Views\*.sql" /> -->
+    <!-- <Build Include="sch_146\Views\*.sql" /> -->
+    <!-- <Build Include="sch_147\Views\*.sql" /> -->
+    <!-- <Build Include="sch_148\Views\*.sql" /> -->
+    <!-- <Build Include="sch_149\Views\*.sql" /> -->
+    <!-- <Build Include="sch_150\Views\*.sql" /> -->
+    <!-- <Build Include="sch_151\Views\*.sql" /> -->
+    <!-- <Build Include="sch_152\Views\*.sql" /> -->
+    <!-- <Build Include="sch_153\Views\*.sql" /> -->
+    <!-- <Build Include="sch_154\Views\*.sql" /> -->
+    <!-- <Build Include="sch_155\Views\*.sql" /> -->
+    <!-- <Build Include="sch_156\Views\*.sql" /> -->
+    <!-- <Build Include="sch_157\Views\*.sql" /> -->
+    <!-- <Build Include="sch_158\Views\*.sql" /> -->
+    <!-- <Build Include="sch_159\Views\*.sql" /> -->
+    <!-- <Build Include="sch_160\Views\*.sql" /> -->
+    <!-- <Build Include="sch_161\Views\*.sql" /> -->
+    <!-- <Build Include="sch_162\Views\*.sql" /> -->
+    <!-- <Build Include="sch_163\Views\*.sql" /> -->
+    <!-- <Build Include="sch_164\Views\*.sql" /> -->
+    <!-- <Build Include="sch_165\Views\*.sql" /> -->
+    <!-- <Build Include="sch_166\Views\*.sql" /> -->
+    <!-- <Build Include="sch_167\Views\*.sql" /> -->
+    <!-- <Build Include="sch_168\Views\*.sql" /> -->
+    <!-- <Build Include="sch_169\Views\*.sql" /> -->
+    <!-- <Build Include="sch_170\Views\*.sql" /> -->
+    <!-- <Build Include="sch_171\Views\*.sql" /> -->
+    <!-- <Build Include="sch_172\Views\*.sql" /> -->
+    <!-- <Build Include="sch_173\Views\*.sql" /> -->
+    <!-- <Build Include="sch_174\Views\*.sql" /> -->
+    <!-- <Build Include="sch_175\Views\*.sql" /> -->
+    <!-- <Build Include="sch_176\Views\*.sql" /> -->
+    <!-- <Build Include="sch_177\Views\*.sql" /> -->
+    <!-- <Build Include="sch_178\Views\*.sql" /> -->
+    <!-- <Build Include="sch_179\Views\*.sql" /> -->
+    <!-- <Build Include="sch_180\Views\*.sql" /> -->
+    <!-- <Build Include="sch_181\Views\*.sql" /> -->
+    <!-- <Build Include="sch_182\Views\*.sql" /> -->
+    <!-- <Build Include="sch_183\Views\*.sql" /> -->
+    <!-- <Build Include="sch_184\Views\*.sql" /> -->
+    <!-- <Build Include="sch_185\Views\*.sql" /> -->
+    <!-- <Build Include="sch_186\Views\*.sql" /> -->
+    <!-- <Build Include="sch_187\Views\*.sql" /> -->
+    <!-- <Build Include="sch_188\Views\*.sql" /> -->
+    <!-- <Build Include="sch_189\Views\*.sql" /> -->
+    <!-- <Build Include="sch_190\Views\*.sql" /> -->
+    <!-- <Build Include="sch_191\Views\*.sql" /> -->
+    <!-- <Build Include="sch_192\Views\*.sql" /> -->
+    <!-- <Build Include="sch_193\Views\*.sql" /> -->
+    <!-- <Build Include="sch_194\Views\*.sql" /> -->
+    <!-- <Build Include="sch_195\Views\*.sql" /> -->
+    <!-- <Build Include="sch_196\Views\*.sql" /> -->
+    <!-- <Build Include="sch_197\Views\*.sql" /> -->
+    <!-- <Build Include="sch_198\Views\*.sql" /> -->
+    <!-- <Build Include="sch_199\Views\*.sql" /> -->
+  </ItemGroup>
+</Project>
