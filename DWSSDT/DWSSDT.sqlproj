@@ -63,21 +63,25 @@
     <Folder Include="sch_0\" />
     <Folder Include="sch_0\Tables\" />
     <Folder Include="sch_0\Views\" />
+    <Folder Include="sch_1" />
+    <Folder Include="sch_1\Tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Security\Schemas\sch_0.sql" />
+    <Build Include="Security\Schemas\sch_1.sql" />
+    <Build Include="sch_1\Tables\tbl_11.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="sch_0\Tables\tbl_0.sql" />
-	<Build Include="sch_0\Tables\tbl_1.sql" />
-	<Build Include="sch_0\Tables\tbl_2.sql" />
-	<Build Include="sch_0\Tables\tbl_3.sql" />
-	<Build Include="sch_0\Tables\tbl_4.sql" />
-	<Build Include="sch_0\Tables\tbl_5.sql" />
-	<Build Include="sch_0\Tables\tbl_6.sql" />
-	<Build Include="sch_0\Tables\tbl_7.sql" />
-	<Build Include="sch_0\Tables\tbl_8.sql" />
-	<Build Include="sch_0\Tables\tbl_9.sql" />
+    <Build Include="sch_0\Tables\tbl_1.sql" />
+    <Build Include="sch_0\Tables\tbl_2.sql" />
+    <Build Include="sch_0\Tables\tbl_3.sql" />
+    <Build Include="sch_0\Tables\tbl_4.sql" />
+    <Build Include="sch_0\Tables\tbl_5.sql" />
+    <Build Include="sch_0\Tables\tbl_6.sql" />
+    <Build Include="sch_0\Tables\tbl_7.sql" />
+    <Build Include="sch_0\Tables\tbl_8.sql" />
+    <Build Include="sch_0\Tables\tbl_9.sql" />
     <!-- <Build Include="sch_1\Tables\*.sql" /> -->
     <!-- <Build Include="sch_2\Tables\*.sql" /> -->
     <!-- <Build Include="sch_3\Tables\*.sql" /> -->
@@ -279,16 +283,16 @@
     <!-- <Build Include="sch_199\Tables\*.sql" /> -->
   </ItemGroup>
   <ItemGroup>
-	<Build Include="sch_0\Views\vw_0.sql" />
-	<Build Include="sch_0\Views\vw_1.sql" />
-	<Build Include="sch_0\Views\vw_2.sql" />
-	<Build Include="sch_0\Views\vw_3.sql" />
-	<Build Include="sch_0\Views\vw_4.sql" />
-	<Build Include="sch_0\Views\vw_5.sql" />
-	<Build Include="sch_0\Views\vw_6.sql" />
-	<Build Include="sch_0\Views\vw_7.sql" />
-	<Build Include="sch_0\Views\vw_8.sql" />
-	<Build Include="sch_0\Views\vw_9.sql" />
+    <Build Include="sch_0\Views\vw_0.sql" />
+    <Build Include="sch_0\Views\vw_1.sql" />
+    <Build Include="sch_0\Views\vw_2.sql" />
+    <Build Include="sch_0\Views\vw_3.sql" />
+    <Build Include="sch_0\Views\vw_4.sql" />
+    <Build Include="sch_0\Views\vw_5.sql" />
+    <Build Include="sch_0\Views\vw_6.sql" />
+    <Build Include="sch_0\Views\vw_7.sql" />
+    <Build Include="sch_0\Views\vw_8.sql" />
+    <Build Include="sch_0\Views\vw_9.sql" />
     <!-- <Build Include="sch_0\Views\*.sql" /> -->
     <!-- <Build Include="sch_1\Views\*.sql" /> -->
     <!-- <Build Include="sch_2\Views\*.sql" /> -->
